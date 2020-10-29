@@ -10,18 +10,19 @@
   <a-scene embedded arjs='trackingMethod: best;'>
       <a-anchor hit-testing-enabled='true'>
 
-   <div style="position:relative">
-  <div style="position:absolute; z-index: 1000; ">
-  <img src="https://i.ibb.co/qpsSLyY/ARLogo.png" alt="" height="50" width="50">
-  </div>
+   
     
-   <a-image crossorigin="anonymous" position="0 0.5 0" src="https://i.ibb.co/DYZX326/1200px-Kansas-Jayhawks-logo-svg.png" width="4"  height="2">
+<!-- handle hiro marker -->
+		<a-marker preset='hiro'>
+			<a-image crossorigin="anonymous" position="0 0.5 0" src="https://i.ibb.co/DYZX326/1200px-Kansas-Jayhawks-logo-svg.png" width="4"  height="2">
    	<a-animation attribute="rotation"
                dur="10000"
                fill="forwards"
                to="0 360 0"
                repeat="indefinite"></a-animation>
    </a-image>
+			
+		</a-marker>
     
       </a-anchor>
     <a-camera-static/>
